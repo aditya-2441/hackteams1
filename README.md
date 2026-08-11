@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HackTeams
 
-## Getting Started
+This project was built in collaboration with a college senior and has been an absolutely incredible learning experience! It served as a deep dive into modern full-stack web development and database management.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📖 About the Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+HackTeams is a comprehensive full-stack web application designed to facilitate hackathon team building and management. Based on the project's structure, it allows users to register, create profiles, form teams, and manage hackathon events seamlessly.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Based on the application's routing and component structure, the platform includes the following features:
 
-## Learn More
+* **User Authentication:** Secure sign-in, registration, and logout flows.
+* **User Profiles:** Dedicated public and private profile pages for users to showcase their skills and achievements.
+* **Hackathon Dashboard:** Interfaces for exploring, joining, and managing hackathon events.
+* **Team Management:** Capabilities to view team members, roles needed, and team posts.
+* **Notifications:** A system to keep users updated on applications and team statuses.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project leverages a modern, robust technology stack:
 
-## Deploy on Vercel
+* **Framework:** Next.js utilizing the modern App Router (`src/app/`).
+* **Language:** TypeScript (`.ts` and `.tsx` files throughout the project).
+* **Database ORM:** Prisma (`prisma/schema.prisma` and automated migrations).
+* **Styling:** CSS Modules (`*.module.css`) and PostCSS.
+* **UI Components:** Modular, reusable UI components (like Buttons, Cards, Dialogs, and Avatars) located in `src/components/ui/`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Project Structure Highlights
+
+* **`src/app/`**: Contains the core routing of the application, including API routes (`/api/teams`, `/api/users`, `/api/hackathon`) and front-end pages.
+* **`src/components/`**: Houses reusable React components, split into specific domains like `events`, `teams`, and generic `ui` elements.
+* **`prisma/`**: Contains the database schema and a detailed history of database migrations.
+* **`public/`**: Stores static assets and images used across the platform.
+
+---
+
+## 🚀 Getting Started
+
+To run this project locally on your machine, follow these steps:
+
+1. **Clone the repository** to your local machine.
+2. **Install dependencies** by running `npm install` in your terminal.
+3. **Set up the database** using Prisma by running `npx prisma db push` or `npx prisma migrate dev`.
+4. **Start the development server** with `npm run dev`.
+5. **Open your browser** and navigate to `http://localhost:3000` to view the application.
